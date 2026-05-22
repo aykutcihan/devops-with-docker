@@ -1,6 +1,6 @@
 # DevOps with Docker - Spring 2026
 
-University of Helsinki MOOC course notes and exercises.
+Personal notes and exercise solutions for the [DevOps with Docker](https://courses.mooc.fi/org/uh-cs/courses/devops-with-docker-spring-2026) course by University of Helsinki.
 
 ## Structure
 
@@ -18,6 +18,11 @@ devops-with-docker/
 └── chapter4-security-and-optimization/
 ```
 
-Each section contains:
-- `notes.md` — section notes
-- `exercises/` — exercise solutions
+Each section contains topic notes and an `exercises/` folder with question and answer files.
+
+## Course Info
+
+- **Course**: DevOps with Docker, Spring 2026
+- **Provider**: University of Helsinki
+- **Credits**: 1-3 ECTS (Chapters 2-4, one each)
+- **Deadline**: June 16, 2026
