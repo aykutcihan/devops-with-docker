@@ -8,12 +8,12 @@ Personal notes and exercise solutions for the DevOps with Docker course by Unive
 
 [![Course](https://img.shields.io/badge/Course-DevOps%20with%20Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://courses.mooc.fi/org/uh-cs/courses/devops-with-docker-spring-2026)
 [![University](https://img.shields.io/badge/University%20of-Helsinki-003580?style=for-the-badge)](https://www.helsinki.fi)
-[![Status](https://img.shields.io/badge/Status-In%20Progress-f0a30a?style=for-the-badge)]()
+[![Status](https://img.shields.io/badge/Status-Completed-4caf50?style=for-the-badge)]()
 [![Deadline](https://img.shields.io/badge/Deadline-June%2016%2C%202026-e05d44?style=for-the-badge)]()
 
 [![Chapter 2](https://img.shields.io/badge/Chapter%202-Completed%20✓-4caf50?style=flat-square)](https://courses.mooc.fi/certificates/validate/gmhpcwsptiutyiu)
 [![Chapter 3](https://img.shields.io/badge/Chapter%203-Completed%20✓-4caf50?style=flat-square)]()
-[![Chapter 4](https://img.shields.io/badge/Chapter%204-In%20Progress-f0a30a?style=flat-square)]()
+[![Chapter 4](https://img.shields.io/badge/Chapter%204-Completed%20✓-4caf50?style=flat-square)]()
 
 </div>
 
