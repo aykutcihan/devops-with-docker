@@ -15,6 +15,11 @@ devops-with-docker/
 │   ├── 06-utilizing-tools-from-the-registry/
 │   └── 07-summary/
 ├── chapter3-docker-compose/
+│   ├── 01-migrating-to-docker-compose/
+│   ├── 02-docker-networking/
+│   ├── 03-volumes-in-action/
+│   ├── 04-containers-in-development/
+│   └── 05-summary/
 └── chapter4-security-and-optimization/
 ```
 
