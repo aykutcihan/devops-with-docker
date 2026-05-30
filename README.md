@@ -1,6 +1,23 @@
+<div align="center">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/University_of_Helsinki_coat_of_arms.svg/120px-University_of_Helsinki_coat_of_arms.svg.png" width="80" alt="University of Helsinki"/>
+
 # DevOps with Docker - Spring 2026
 
-Personal notes and exercise solutions for the [DevOps with Docker](https://courses.mooc.fi/org/uh-cs/courses/devops-with-docker-spring-2026) course by University of Helsinki.
+Personal notes and exercise solutions for the DevOps with Docker course by University of Helsinki.
+
+[![Course](https://img.shields.io/badge/Course-DevOps%20with%20Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://courses.mooc.fi/org/uh-cs/courses/devops-with-docker-spring-2026)
+[![University](https://img.shields.io/badge/University%20of-Helsinki-003580?style=for-the-badge)](https://www.helsinki.fi)
+[![Status](https://img.shields.io/badge/Status-In%20Progress-f0a30a?style=for-the-badge)]()
+[![Deadline](https://img.shields.io/badge/Deadline-June%2016%2C%202026-e05d44?style=for-the-badge)]()
+
+[![Chapter 2](https://img.shields.io/badge/Chapter%202-Completed%20✓-4caf50?style=flat-square)](https://courses.mooc.fi/certificates/validate/gmhpcwsptiutyiu)
+[![Chapter 3](https://img.shields.io/badge/Chapter%203-Completed%20✓-4caf50?style=flat-square)]()
+[![Chapter 4](https://img.shields.io/badge/Chapter%204-In%20Progress-f0a30a?style=flat-square)]()
+
+</div>
+
+---
 
 ## Certificates
 
@@ -37,7 +54,9 @@ Each section contains topic notes and an `exercises/` folder with question and a
 
 ## Course Info
 
-- **Course**: DevOps with Docker, Spring 2026
-- **Provider**: University of Helsinki
-- **Credits**: 1-3 ECTS (Chapters 2-4, one each)
-- **Deadline**: June 16, 2026
+| | |
+|---|---|
+| **Course** | DevOps with Docker, Spring 2026 |
+| **Provider** | University of Helsinki |
+| **Credits** | 1-3 ECTS (Chapters 2-4, one each) |
+| **Deadline** | June 16, 2026 |
