@@ -1,7 +1,13 @@
-# Exercise 3.7 - Optimized Dockerfile 2
+# Exercise 3.7 - Project with Preinstalled Environments
 
-Do the same for the example backend.
+Return to the frontend and backend from exercise 3.6.
 
-Use multi-stage builds and choose an appropriate base image.
+Change the base image to something more suitable:
+- Frontend: use a preinstalled **Node.js** image (Node 16 required) — use an Alpine variant
+- Backend: use a preinstalled **Golang** image — use an Alpine variant
 
-Submit the Dockerfile and the size of the resulting image (`docker images` output).
+Make sure the application still works after the changes.
+
+Submit:
+1. Changed Dockerfiles
+2. Image size **before** and **after** your changes

@@ -25,6 +25,12 @@ devops-with-docker/
 │   ├── 04-containers-in-development/
 │   └── 05-summary/
 └── chapter4-security-and-optimization/
+    ├── 01-official-images-and-trust/
+    ├── 02-deployment-pipelines/
+    ├── 03-using-a-non-root-user/
+    ├── 04-optimizing-image-size/
+    ├── 05-multi-host-environments/
+    └── 06-summary/
 ```
 
 Each section contains topic notes and an `exercises/` folder with question and answer files.

@@ -1,9 +1,17 @@
-# Exercise 3.6 - Optimized Dockerfile
+# Exercise 3.6 - Optimized Project Images
 
-In this exercise we will take the example frontend and optimize the Dockerfile.
+Return to the frontend and backend Dockerfiles from exercises 1.12 and 1.13.
 
-The goal is to optimize the Dockerfile so that the resulting image is as small as possible.
+Keep the base images as they were: **ubuntu** for the frontend, **ubuntu or golang** for the backend.
 
-Use multi-stage builds and choose an appropriate base image.
+Optimize by:
+- Joining RUN commands
+- Removing useless parts after build
 
-Submit the Dockerfile and the size of the resulting image (`docker images` output).
+Hints:
+- Frontend: `src/` folder is not needed after `npm run build` (static files go to `build/`)
+- Backend: cache is not needed
+
+Submit:
+1. Image sizes **before** and **after** the optimization
+2. Your optimized Dockerfiles
