@@ -1,0 +1,145 @@
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- Your Computer -->
+    <mxCell id="10" value="Your Computer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="360" width="160" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- Internet -->
+    <mxCell id="11" value="Internet" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="120" width="160" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- Cluster outer box -->
+    <mxCell id="20" value="Cluster" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;dashed=1;strokeWidth=3;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="260" y="40" width="1340" height="760" as="geometry" />
+    </mxCell>
+
+    <!-- Control Plane -->
+    <mxCell id="21" value="Control Plane&#xa;(Master Node)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="480" y="90" width="200" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- Ingress -->
+    <mxCell id="22" value="Ingress" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="780" y="90" width="160" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- Service 1 - Blog -->
+    <mxCell id="23" value="Service&#xa;(Blog)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="360" y="260" width="160" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- Service 2 - Game Server -->
+    <mxCell id="24" value="Service&#xa;(Game Server)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1100" y="260" width="160" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- Node 1 -->
+    <mxCell id="30" value="Node 1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;fontStyle=1;fontSize=13;fontColor=#333333;" vertex="1" parent="1">
+      <mxGeometry x="280" y="400" width="260" height="250" as="geometry" />
+    </mxCell>
+
+    <!-- Pod 1 in Node 1 -->
+    <mxCell id="31" value="Pod" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="300" y="440" width="220" height="170" as="geometry" />
+    </mxCell>
+
+    <!-- Container in Pod 1 -->
+    <mxCell id="32" value="Container&#xa;blog:latest" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="320" y="490" width="180" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- Node 2 -->
+    <mxCell id="40" value="Node 2" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;fontStyle=1;fontSize=13;fontColor=#333333;" vertex="1" parent="1">
+      <mxGeometry x="600" y="400" width="260" height="250" as="geometry" />
+    </mxCell>
+
+    <!-- Pod 2 in Node 2 -->
+    <mxCell id="41" value="Pod" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="620" y="440" width="220" height="170" as="geometry" />
+    </mxCell>
+
+    <!-- Container in Pod 2 -->
+    <mxCell id="42" value="Container&#xa;blog:latest" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="640" y="490" width="180" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- Node 3 -->
+    <mxCell id="50" value="Node 3" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;fontStyle=1;fontSize=13;fontColor=#333333;" vertex="1" parent="1">
+      <mxGeometry x="980" y="400" width="280" height="360" as="geometry" />
+    </mxCell>
+
+    <!-- Pod 3 in Node 3 -->
+    <mxCell id="51" value="Pod" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="440" width="240" height="170" as="geometry" />
+    </mxCell>
+
+    <!-- Container in Pod 3 -->
+    <mxCell id="52" value="Container&#xa;game-server:latest" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1020" y="490" width="200" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- Volume -->
+    <mxCell id="53" value="Volume&#xa;(game-data)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f0a30a;strokeColor=#BD7000;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1040" y="650" width="160" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- ARROWS -->
+
+    <!-- kubectl: Your Computer → Control Plane -->
+    <mxCell id="60" value="kubectl" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#9673a6;fontStyle=1;fontSize=12;" edge="1" parent="1" source="10" target="21">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- HTTP: Internet → Ingress -->
+    <mxCell id="61" value="HTTP Request" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#b85450;fontStyle=1;fontSize=12;" edge="1" parent="1" source="11" target="22">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Ingress → Service 1 -->
+    <mxCell id="62" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#82b366;" edge="1" parent="1" source="22" target="23">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Ingress → Service 2 -->
+    <mxCell id="63" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#82b366;" edge="1" parent="1" source="22" target="24">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Service 1 → Pod 1 -->
+    <mxCell id="64" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="23" target="31">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Service 1 → Pod 2 -->
+    <mxCell id="65" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="23" target="41">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Service 2 → Pod 3 -->
+    <mxCell id="66" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#6c8ebf;" edge="1" parent="1" source="24" target="51">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Control Plane → Nodes (manages) -->
+    <mxCell id="67" value="manages" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;strokeColor=#9673a6;fontSize=11;" edge="1" parent="1" source="21" target="30">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="68" value="manages" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;strokeColor=#9673a6;fontSize=11;" edge="1" parent="1" source="21" target="40">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="69" value="manages" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;strokeColor=#9673a6;fontSize=11;" edge="1" parent="1" source="21" target="50">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Volume → Pod 3 -->
+    <mxCell id="70" value="mounted" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#BD7000;fontSize=11;" edge="1" parent="1" source="53" target="51">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+  </root>
+</mxGraphModel>

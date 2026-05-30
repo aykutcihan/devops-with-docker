@@ -4,7 +4,11 @@ Personal notes and exercise solutions for the [DevOps with Docker](https://cours
 
 ## Certificates
 
-- [Chapter 2 - Docker Basics](https://courses.mooc.fi/certificates/validate/gmhpcwsptiutyiu)
+See [CERTIFICATES.md](certificates/CERTIFICATES.md) for all certificates.
+
+| Course | Date | Link |
+|--------|------|------|
+| DevOps with Docker: Docker Basics | May 30, 2026 | [Validate](https://courses.mooc.fi/certificates/validate/gmhpcwsptiutyiu) |
 
 ## Structure
 

@@ -1,52 +1,34 @@
 # Docker Swarm
 
-## Why Multi-Host?
+## Beyond Single-Host Docker
 
-So far everything has run on a single machine. Production systems typically span multiple hosts for:
+When we have more than one host machine we cannot rely solely on Docker Compose. Docker includes additional tools for automatic deployment, scaling and management of dockerized applications across multiple hosts.
 
-- **High availability**: if one host fails, others continue serving
-- **Scalability**: distribute load across many machines
-- **Geographic distribution**: run containers close to users
+## Docker Swarm Mode
 
-## Initializing a Swarm
+Built into Docker — turns a pool of Docker hosts into a single virtual host.
 
 ```bash
-# On the manager node
-docker swarm init --advertise-addr <manager-ip>
-
-# Join workers using the token from the output
-docker swarm join --token <token> <manager-ip>:2377
+docker swarm init
 ```
 
-## Deploying a Stack
+Docker Swarm mode is the lightest way of utilizing multiple hosts. Good for small setups (2-3 hosts).
 
-Docker Swarm uses the same `docker-compose.yml` format with `deploy` keys:
+## When to Use Swarm vs Kubernetes
 
-```yaml
-version: "3.8"
-services:
-  web:
-    image: nginx:alpine
-    deploy:
-      replicas: 3
-      restart_policy:
-        condition: on-failure
-    ports:
-      - "80:80"
-```
+A single tool is rarely optimal for all scenarios:
 
-```bash
-docker stack deploy -c docker-compose.yml myapp
-docker stack services myapp
-docker stack ps myapp
-```
+- **2-3 hosts, hobby project** → Docker Swarm: simpler, less overhead
+- **Many hosts, production** → Kubernetes: more powerful, larger ecosystem
 
-## Swarm Concepts
+## Learning Kubernetes Locally
 
-| Concept | Description |
-|---------|-------------|
-| Manager node | Controls the swarm, schedules tasks |
-| Worker node | Runs containers, reports to manager |
-| Service | Definition of how to run a container |
-| Task | A running container instance |
-| Replica | Number of instances to run |
+You can get started with Kubernetes without a cloud account:
+
+| Tool | Description |
+|------|-------------|
+| k3s | Lightweight Kubernetes distribution |
+| k3d | Run k3s inside Docker containers |
+| kind | Kubernetes in Docker |
+
+These avoid complicated setup and cloud credit limits.

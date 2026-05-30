@@ -1,53 +1,46 @@
 # Kubernetes
 
-The industry-standard container orchestration platform.
+The de facto standard for orchestrating containers in large multi-host environments.
 
-## Docker Swarm vs Kubernetes
+## Why Kubernetes
 
-| Feature | Docker Swarm | Kubernetes |
-|---------|-------------|------------|
-| Complexity | Simple | Complex |
-| Learning curve | Low | High |
-| Production use | Less common | Industry standard |
-| Auto-scaling | Manual | Built-in HPA |
-| Self-healing | Basic | Advanced |
-| Ecosystem | Limited | Massive |
+- Highly customizable
+- Large community
+- Robust features (auto-scaling, self-healing, rolling deployments)
 
-## Kubernetes Objects
+Drawback: higher learning curve compared to Docker Swarm.
 
-- **Pod**: Smallest deployable unit (one or more containers)
-- **Deployment**: Manages replica sets of pods
-- **Service**: Exposes pods via stable network endpoint
-- **Ingress**: Manages external HTTP/S access
-- **ConfigMap / Secret**: Configuration and sensitive data
+## Key Concepts
 
-## Basic Deployment
+| Term | Description |
+|------|-------------|
+| Cluster | The full Kubernetes environment — all nodes together |
+| Node | A single host machine (VM or physical) in the cluster |
+| Pod | Smallest deployable unit — wraps one or more containers |
+| Container | The actual running process inside a Pod |
+| Service | Stable network endpoint that exposes Pods |
+| Volume | Persistent storage attached to a Pod |
+| Ingress | Manages external HTTP/S access into the cluster |
+| kubectl | CLI tool to send instructions to the cluster |
 
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: my-app
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: my-app
-  template:
-    metadata:
-      labels:
-        app: my-app
-    spec:
-      containers:
-        - name: my-app
-          image: myimage:latest
-          ports:
-            - containerPort: 3000
+## Cluster Architecture
+
+```
+Your Computer
+    │ kubectl apply
+    ▼
+Control Plane (Master Node)
+    │ schedules Pods
+    ▼
+Worker Nodes (Host Machines)
+    ├── Node 1: Pod (Container A, Container B)
+    ├── Node 2: Pod (Container C)
+    └── Node 3: Pod (Container D)
 ```
 
 ## Managed Kubernetes Services
 
-Running Kubernetes yourself is complex. Cloud providers offer managed versions:
+Running Kubernetes yourself is complex. Cloud providers offer managed control planes:
 
 | Provider | Service |
 |----------|---------|
@@ -56,13 +49,4 @@ Running Kubernetes yourself is complex. Cloud providers offer managed versions:
 | Azure | AKS (Azure Kubernetes Service) |
 | DigitalOcean | DOKS |
 
-Managed services handle control plane management, upgrades, and scaling infrastructure.
-
-## When to Use What
-
-| Scenario | Tool |
-|----------|------|
-| Development, single host | `docker compose` |
-| Small production, simple needs | Docker Swarm |
-| Large production, complex needs | Kubernetes |
-| Learning / hobby | Docker Compose on a VPS |
+Most common production setup: use a managed service, focus on your application not the cluster.
