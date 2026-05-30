@@ -5,4 +5,4 @@
 - Containers are isolated from each other and from the host system
 - Docker provides tools to interact between containers and the host when needed
 
-![Docker Container Structure](02_docker_container_structure.png)
+![Docker Container Structure](images/02_docker_container_structure.png)

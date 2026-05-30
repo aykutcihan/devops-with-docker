@@ -1,6 +1,6 @@
 # VM vs Container
 
-![VM vs Container](04_vm_vs_container.png)
+![VM vs Container](images/04_vm_vs_container.png)
 
 ## Virtual Machine (VM)
 A Virtual Machine runs on a hypervisor, which virtualizes the physical hardware. Each VM includes a full operating system along with its own binaries and libraries. This makes VMs heavy and slow to start. However, they provide strong isolation and are well suited for running multiple different OS environments on the same machine.
