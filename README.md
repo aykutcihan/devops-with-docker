@@ -2,6 +2,10 @@
 
 Personal notes and exercise solutions for the [DevOps with Docker](https://courses.mooc.fi/org/uh-cs/courses/devops-with-docker-spring-2026) course by University of Helsinki.
 
+## Certificates
+
+- [Chapter 2 - Docker Basics](https://courses.mooc.fi/certificates/validate/gmhpcwsptiutyiu)
+
 ## Structure
 
 ```
