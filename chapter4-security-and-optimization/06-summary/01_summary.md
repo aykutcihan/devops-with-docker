@@ -1,5 +1,9 @@
 # Chapter 4 Summary - Security and Optimization
 
+In this chapter, we explored several crucial aspects essential for running containers in production environments. We delved into the importance of CI/CD pipelines in ensuring a seamless deployment process and highlighted the significance of running containers as non-root users for enhanced security. Additionally, we examined strategies for minimizing container size and discussed the advantages of maintaining a minimal footprint.
+
+> A logical next step is the course **DevOps with Kubernetes**.
+
 ## What We Covered
 
 ### 1. Official Images and Trust

@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/University_of_Helsinki_coat_of_arms.svg/120px-University_of_Helsinki_coat_of_arms.svg.png" width="80" alt="University of Helsinki"/>
+<img src="https://www.helsinki.fi/assets/drupal/styles/16_8_xl/s3/media-image/bbook_logo_prominent_usage_rights_reserved.png.webp?itok=pVb7UCW1" width="200" alt="University of Helsinki"/>
 
 # DevOps with Docker - Spring 2026
 
